@@ -8,7 +8,7 @@ from openai import OpenAI
 #%% OpenAI API Key & Prompt
 ## Replace with your own key
 api_key = APIcred.api_key
-Prompt = "Transcribe the written content in this image"
+Prompt = "Transcribe the written content in this image, try to include all notes and information in the image"
 client = OpenAI(api_key=api_key)
 
 # Use in command line as python ./Transcribenotes.py <path_to_image> --transcription_path <path_to_transcriptionfile>
@@ -28,7 +28,7 @@ def transcribe_image (image_path, transcription_path = None):
 
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="o1",
         messages=[
             {
                 "role": "user",
@@ -50,13 +50,13 @@ def transcribe_image (image_path, transcription_path = None):
 
     transcription = response.choices[0].message.content
 
-    with open(transcription_path, 'w') as file:
+    with open(transcription_path, 'w', encoding='utf-8') as file:
         file.write(transcription)
     print ("-----" + "\n" + f"Transcript successfully saved at {transcription_path}")
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Transcribe Image")
-    parser.add_argument("--image_path", default=r'C:\LocalData\pabflore\OpenAI-testi\Testis\Vision\testimage.jpg',type=str, help="Path to the image file")
+    parser.add_argument("image_path",type=str, help="Path to the image file")
     parser.add_argument("--transcription_path", type=str, help="Optional path for the output transcription text file")
     args = parser.parse_args()
     return args
