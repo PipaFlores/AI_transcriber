@@ -1,0 +1,31 @@
+Sure! Here is the transcription of the written content:
+
+---
+
+Ideas from lit review
+
+- Affordances-based player modeling  
+  Perceived affordances are influenced by an agent's actual and relative position in the world (game state), as well as what the agent is trying to achieve (inner goals)  
+  (Also closely relates to possible actions perceptions of the agent)  
+
+- Agent inner goals  
+  - Vahlo's research  
+    (2022) Motivational constitution of “playing for fun”  
+    6 clusters/bases play motives  
+    (Immersive, Autonomous, Challenge, Fun-seeking, Social, Competitive)  
+      
+    (2020) Challenge types EFA-based talent factors (5): Physical, Analytical, socioemotional, insight, foresight  
+
+- Play style  
+  (Vahlo et al., 2018) gameplay activity inventory survey (GAIN)  
+    5 latent factors for player profiles  
+    • Aggression  
+    • Management  
+    • Exploration  
+    • Coordinating  
+    • Caretaking  
+    (self-report psychometrics)  
+
+  (Bonchev et al., 2018) playing styles based on exponential learning theory  
+
+---
